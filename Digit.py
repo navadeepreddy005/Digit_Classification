@@ -10,11 +10,11 @@ from joblib import load
 def load_model():
     try:
         # Try loading the joblib version first
-        return load("E:/B Tech/Mini Project/Digit/Digit_classification.joblib")
+        return load("Digit_classification.joblib")
     except:
         # Fall back to LightGBM native format
         model = lgb.LGBMClassifier()
-        model._Booster = lgb.Booster(model_file='E:/B Tech/Mini Project/Digit/Digit_classification.txt')
+        model._Booster = lgb.Booster(model_file='Digit_classification.txt')
         return model
 
 model = load_model()
