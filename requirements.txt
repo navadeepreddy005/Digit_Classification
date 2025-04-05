@@ -1,0 +1,11 @@
+streamlit
+streamlit-drawable-canvas
+numpy
+pillow
+scikit-learn
+lightgbm
+joblib
+matplotlib
+seaborn
+jupyter
+notebook
